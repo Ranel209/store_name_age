@@ -22,4 +22,9 @@ while True:
     elif retry != "yes":
         print("Input Invalid, please enter 'yes' or 'no'.")
 #find oldest age
-#print oldest
+if store_name_age:
+    oldest_person = max(store_name_age, key=lambda person: store_name_age[person]["age"])
+    oldest_age = store_name_age[oldest_person]["age"]
+  
+# Print the result
+    print(f"The oldest person is {oldest_person}, who is {oldest_age} years old.")
